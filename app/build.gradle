@@ -4,10 +4,9 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.0"
 
     defaultConfig {
-        applicationId "com.codepalace.chatbot"
+        applicationId 'com.codepalace.Clara'
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
@@ -22,6 +21,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'com.codepalace.chatbot'
 }
 
 dependencies {
@@ -40,12 +40,6 @@ dependencies {
     //Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
-
-    // Lifecycle components
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
-    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
-    implementation "androidx.lifecycle:lifecycle-common-java8:2.2.0"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
 
 
 }
